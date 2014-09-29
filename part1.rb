@@ -10,6 +10,8 @@ def max_2_sum(int_array)
   int_array = int_array.sort
   if int_array.length == 1
     return int_array[0]
+  elsif int_array.length == 0
+    return 0
   end
   return int_array.last + int_array[int_array.length-2] 
 end
@@ -27,4 +29,5 @@ def sum_to_n?(int_array, n)
   return false
 end
 
-
+my_array = []
+puts max_2_sum(my_array)
